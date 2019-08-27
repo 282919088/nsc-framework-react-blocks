@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Modal, Icon, message } from 'antd';
-import { NscForm, NscPageRequest } from 'nsc-framework-react';
-import { request, utils } from 'nsc-framework-react/lib/utils';
+import { NscForm, NscPageRequest } from 'nsc-framework-react-components';
+import { request, utils } from 'nsc-framework-react-components/lib/utils';
 
 class ModuleEdit extends NscPageRequest {
 

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Modal, Row, Col, Input, Divider, Button, Popconfirm, Switch } from 'antd';
-import { NscPageRequest, NscGrid } from 'nsc-framework-react';
-import { request } from 'nsc-framework-react/lib/utils';
+import { NscPageRequest, NscGrid } from 'nsc-framework-react-components';
+import { request } from 'nsc-framework-react-components/lib/utils';
 import ModuleAuthEdit from './ModuleAuthEdit';
 import styles from './index.less';
 const { Search } = Input;

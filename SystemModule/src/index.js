@@ -1,7 +1,7 @@
 import React, { Fragment, PureComponent } from 'react';
 import { Card, Row, Col, Icon, Input, Menu, Dropdown, Divider, Button, message, Popconfirm, Switch } from 'antd';
-import { NscTree, NscGrid, NscIcon, BodyRow } from 'nsc-framework-react';
-import { request } from 'nsc-framework-react/lib/utils';
+import { NscTree, NscGrid, NscIcon, BodyRow } from 'nsc-framework-react-components';
+import { request } from 'nsc-framework-react-components/lib/utils';
 import { PageHeaderWrapper, GridContent } from '@ant-design/pro-layout';
 import ModuleEdit from './ModuleEdit'
 import ModuleAuth from './ModuleAuth'

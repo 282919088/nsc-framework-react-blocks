@@ -1,0 +1,65 @@
+@import '~antd/lib/style/themes/default.less';
+
+.tableListOperator {
+    margin-bottom: 8px;
+    button {
+      margin-right: 8px;
+    }    
+  }
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+    .ant-col {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: @screen-md){
+    .buttonGroup {
+      margin-left: 40%;
+  }
+  .button {
+      margin-left: 5%;
+      transform:rotate(90deg);
+      -ms-transform:rotate(90deg); 	/* IE 9 */
+      -moz-transform:rotate(90deg); 	/* Firefox */
+      -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+      -o-transform:rotate(90deg); 	/* Opera */
+    }
+  }
+
+
+@media screen and (min-width: @screen-md) and (max-width: @screen-lg){
+  .buttonGroup {
+        margin-top: 18%;
+        margin-left:0;
+  }
+  .button {
+    margin-bottom: 8px;
+    margin-left: 18%;
+  }
+}
+
+@media screen and (min-width: @screen-lg) and (max-width: @screen-xl){
+  .buttonGroup {
+        margin-top: 18%;
+        margin-left:0;
+  }
+  .button {
+    margin-bottom: 8px;
+    margin-left: -18%;
+  }
+}
+@media screen and (min-width: @screen-xl) {
+  .buttonGroup {
+        margin-top: 18%;
+        margin-left:0;
+  }
+  .button {
+    margin-bottom: 8px;
+    margin-left: 15%;
+  }
+}
+

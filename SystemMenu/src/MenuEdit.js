@@ -1,9 +1,7 @@
-import React, { PureComponent } from 'react';
-import { Form, Button, Modal, Radio, Drawer, Icon, message, Row, Col } from 'antd';
-import { NscForm, NscPageRequest } from 'nsc-framework-react';
-import { request, utils } from 'nsc-framework-react/lib/utils';
-import moment from 'moment';
-const FormItem = Form.Item;
+import React from 'react';
+import { Modal, message } from 'antd';
+import { NscForm, NscPageRequest } from 'nsc-framework-react-components';
+import { request, utils } from 'nsc-framework-react-components/lib/utils';
 
 class MenuEdit extends NscPageRequest {
 
@@ -80,12 +78,12 @@ class MenuEdit extends NscPageRequest {
         form.resetFields();
         if (type == 'add') {
             this.setState({ title: '添加菜单' });
-            form.setFieldsValue(utils.pick(params, ['name', 'parentId', 'icon', 'isValid', 'type', 'iconCls', 'moduleId','description']));
+            form.setFieldsValue(utils.pick(params, ['name', 'parentId', 'icon', 'isValid', 'type', 'iconCls', 'moduleId', 'description']));
         } else if (type == 'edit') {
             this.setState({ title: '修改菜单' });
             request("/api/admin/menus/" + params.id, {
                 callback: function (data) {
-                    form.setFieldsValue(utils.pick(data, ['name', 'parentId', 'icon', 'isValid', 'type', 'iconCls', 'moduleId','description']));
+                    form.setFieldsValue(utils.pick(data, ['name', 'parentId', 'icon', 'isValid', 'type', 'iconCls', 'moduleId', 'description']));
                 }
             });
         }

@@ -1,13 +1,16 @@
 {
-  "name": "@umi-block/SystemModule",
+  "name": "@umi-block/system-module",
   "version": "0.0.1",
-  "description": "",
+  "description": "SystemModule",
   "main": "src/index.js",
   "authors": {
     "name": "mliu",
     "email": "mr87@vip.qq.com"
   },
-  "repository": "umijs/umi-blocks/SystemModule",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/282919088/nsc-framework-react-blocks/tree/master/SystemModule"
+  },
   "scripts": {
     "dev": "umi dev"
   },

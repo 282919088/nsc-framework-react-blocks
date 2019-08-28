@@ -8,7 +8,7 @@ block: {
 
 ## user login page
 ```shell
-$ umi block add UserLogin
+$ umi block add UserLogin --path=UserLogin
 ```
 
 ```shell

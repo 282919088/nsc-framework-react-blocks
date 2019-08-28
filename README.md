@@ -1,9 +1,14 @@
 
-## umi 
+## umi config
 ```shell
 block: {
     defaultGitUrl: 'https://github.com/282919088/nsc-framework-react-blocks',
 },
+```
+
+## user login page
+```shell
+$ umi block add UserLogin
 ```
 
 ```shell

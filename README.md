@@ -1,8 +1,10 @@
 
-## 
+## umi 
+```shell
 block: {
     defaultGitUrl: 'https://github.com/282919088/nsc-framework-react-blocks',
 },
+```
 
 ```shell
 $ umi block list

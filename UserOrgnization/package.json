@@ -1,19 +1,22 @@
 {
-  "name": "@umi-block/UserRole",
+  "name": "@umi-block/user-orgnization",
   "version": "0.0.1",
-  "description": "",
+  "description": "UserOrgnization",
   "main": "src/index.js",
   "authors": {
     "name": "mliu",
     "email": "mr87@vip.qq.com"
   },
-  "repository": "umijs/umi-blocks/UserRole",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/282919088/nsc-framework-react-blocks/tree/master/UserOrgnization"
+  },
   "scripts": {
     "dev": "umi dev"
   },
   "dependencies": {
     "@ant-design/pro-layout": "^4.5.14",
-    "nsc-framework-react": "^1.3.2",
+    "nsc-framework-react-components": "^0.0.1",
     "react": ">=16.0.0"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Modal } from 'antd';
-import { NscForm, NscPageRequest } from 'nsc-framework-react';
-import { request, utils } from 'nsc-framework-react/lib/utils';
+import { NscForm, NscPageRequest } from 'nsc-framework-react-components';
+import { request, utils } from 'nsc-framework-react-components/lib/utils';
 import moment from 'moment';
 
 const formLayout = {
@@ -73,20 +73,20 @@ class UserEdit extends NscPageRequest {
         form.resetFields();
         if (type == 'edit') {
             let url = '/api/admin/users/' + params.id;
-            request(url,{
-             callback: function (data) {
-                form.setFieldsValue({
-                    username: data.username,
-                    realname: data.realname,
-                    orgId: data.orgId,
-                    position: data.position,
-                    birthdate: data.birthdate == null ? null : moment(response.data.birthdate, 'YYYY-MM-DD'),
-                    sex: data.sex,
-                    officeTel: data.officeTel,
-                    mobile: data.mobile,
-                    email: data.email,
-                    isValid: data.isValid
-                });
+            request(url, {
+                callback: function (data) {
+                    form.setFieldsValue({
+                        username: data.username,
+                        realname: data.realname,
+                        orgId: data.orgId,
+                        position: data.position,
+                        birthdate: data.birthdate == null ? null : moment(response.data.birthdate, 'YYYY-MM-DD'),
+                        sex: data.sex,
+                        officeTel: data.officeTel,
+                        mobile: data.mobile,
+                        email: data.email,
+                        isValid: data.isValid
+                    });
                 }
             });
         } else {

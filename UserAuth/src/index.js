@@ -1,10 +1,8 @@
-import React, { Component, Fragment } from 'react';
-import { Card, Row, Col, Tree, Input, Table, Switch, Tabs, Icon, Divider, message } from 'antd';
-import { formatMessage, FormattedMessage } from 'umi/locale';
+import React, { Component } from 'react';
+import { Card, Row, Col, Input, Tabs, Icon, Divider, message } from 'antd';
 import { PageHeaderWrapper, GridContent } from '@ant-design/pro-layout';
-import { NscTree, NscGrid, NscIcon } from 'nsc-framework-react';
-import { request } from 'nsc-framework-react/lib/utils';
-import styles from './index.less';
+import { NscTree, NscGrid, NscIcon } from 'nsc-framework-react-components';
+import { request } from 'nsc-framework-react-components/lib/utils';
 
 const TabPane = Tabs.TabPane;
 

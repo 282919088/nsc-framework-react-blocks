@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Modal, message } from 'antd';
-import { NscForm, NscPageRequest } from 'nsc-framework-react';
-import { request, utils } from 'nsc-framework-react/lib/utils';
-import moment from 'moment';
+import { NscForm, NscPageRequest } from 'nsc-framework-react-components';
+import { request, utils } from 'nsc-framework-react-components/lib/utils';
 
 const formLayout = {
     labelCol: { span: 7 },

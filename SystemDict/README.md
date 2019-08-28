@@ -1,12 +1,12 @@
-# @umi-material/SystmDict
-
+# @umi-material/SystemDict
 
 
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/SystmDict
-```
+umi block add SystemDict --path=Platform/System/Dict
+or
+umi block add https://github.com/282919088/nsc-framework-react-blocks/tree/master/SystemDict --path=Platform/System/Dict
 
 ## LICENSE
 

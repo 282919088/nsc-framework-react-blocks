@@ -1,12 +1,11 @@
 import React, { Component, Fragment } from 'react';
-import { Card, Row, Col, Icon, Avatar, Tag, Divider, Popconfirm, Spin, Input, Menu, Table, Dropdown, Radio, Button, Switch, Tree, message } from 'antd';
+import { Card, Row, Col, Divider, Popconfirm,Input, Button, Switch } from 'antd';
 import { PageHeaderWrapper, GridContent } from '@ant-design/pro-layout';
-import { NscGrid } from 'nsc-framework-react';
-import { request } from 'nsc-framework-react/lib/utils';
+import { NscGrid } from 'nsc-framework-react-components';
+import { request } from 'nsc-framework-react-components/lib/utils';
 import DictItemEdit from './DictItemEdit';
 import DictEdit from './DictEdit';
 import { connect } from 'dva';
-const ButtonGroup = Button.Group;
 const { Search } = Input;
 import styles from './index.less';
 

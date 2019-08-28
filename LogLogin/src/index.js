@@ -3,7 +3,7 @@ import styles from './style.less';
 import { Card, Row, Col, Button } from 'antd';
 import { PageHeaderWrapper, GridContent} from '@ant-design/pro-layout';
 import moment from 'moment';
-import { NscGrid, NscForm } from 'nsc-framework-react';
+import { NscGrid, NscForm } from 'nsc-framework-react-components';
 class LoginLog extends Component {
 
     handleFormSubmit = () => {

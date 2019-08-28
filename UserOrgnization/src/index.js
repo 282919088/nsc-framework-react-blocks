@@ -1,15 +1,15 @@
-import React, { Component, Fragment, PureComponent } from 'react';
-import { Icon, Switch, Popconfirm, Divider, Row, Col, Card, Input, Button } from 'antd';
+import React, { Fragment, PureComponent } from 'react';
+import { Switch, Popconfirm, Divider, Row, Col, Card, Input, Button } from 'antd';
 import { PageHeaderWrapper, GridContent } from '@ant-design/pro-layout';
-import { NscGrid } from 'nsc-framework-react';
-import { request } from 'nsc-framework-react/lib/utils';
+import { NscGrid } from 'nsc-framework-react-components';
+import { request } from 'nsc-framework-react-components/lib/utils';
 import OrganizationEdit from './OrganizationEdit';
 import styles from './index.less';
 
 const { Search } = Input;
 
 
-export default class OrganizationPage extends Component {
+export default class OrganizationPage extends PureComponent {
 
     //新建，编辑弹框
     handleEdit = (params, type) => {

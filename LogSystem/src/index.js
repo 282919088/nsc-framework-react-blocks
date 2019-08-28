@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from 'react';
-import { Card, Row, Col, Icon, Input, Button, Tabs } from 'antd';
+import React, { Component } from 'react';
+import { Card, Row, Col, Button, Tabs } from 'antd';
 import { PageHeaderWrapper, GridContent } from '@ant-design/pro-layout';
-import { NscGrid, NscForm } from 'nsc-framework-react';
-import { StandardFormRow } from 'nsc-framework-react/lib/antd';
+import { NscGrid, NscForm } from 'nsc-framework-react-components';
+import { StandardFormRow } from 'nsc-framework-react-components/lib/antd';
 import styles from './style.less';
 import moment from 'moment';
 const { TabPane } = Tabs;
@@ -23,7 +23,7 @@ class SystemLog extends Component {
             },
         };
         return (
-            <NscForm ref="formpanel" layout="inline" {...formItemLayout}  className={styles.fromStyle}>
+            <NscForm ref="formpanel" layout="inline" {...formItemLayout} className={styles.fromStyle}>
                 <StandardFormRow title="请求方式" block >
                     <NscForm.TagSelect name="methodType" viewname="v_methodtype" expandable />
                 </StandardFormRow>

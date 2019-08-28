@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import styles from './index.less';
 import { Card, Divider, Input, Button, Switch, Popconfirm, Row, Col } from 'antd';
 import { GridContent } from '@ant-design/pro-layout';
-import { NscGrid } from 'nsc-framework-react';
-import { request } from 'nsc-framework-react/lib/utils';
+import { NscGrid } from 'nsc-framework-react-components';
+import { request } from 'nsc-framework-react-components/lib/utils';
 import RoleEdit from './RoleEdit';
-const { Search, TextArea } = Input;
+const { Search } = Input;
 
 export default class RolePage extends Component {
     state = {
@@ -119,7 +119,7 @@ export default class RolePage extends Component {
             <>
                 <GridContent>
                     <Card bordered={false}>
-                        <div  className={styles.tableListOperator}>
+                        <div className={styles.tableListOperator}>
                             <Row gutter={10}>
                                 <Col xs={24} sm={17}>
                                     <Button icon="plus" type="primary" onClick={() => this.handleRoleEdit({}, 'add')}>新建</Button>

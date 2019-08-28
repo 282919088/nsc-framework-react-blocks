@@ -1,0 +1,24 @@
+import { IConfig } from 'umi-types';
+
+const config: IConfig = {
+  plugins: [
+    ['umi-plugin-block-dev', {}],
+    [
+      'umi-plugin-react',
+      {
+        dva: true,
+        locale: true,
+        antd: true,
+      },
+    ],
+  ],
+  proxy: {
+    '/api': {
+      target: 'http://127.0.0.1:8080/api',
+      changeOrigin: true,
+      pathRewrite: { '^/api': '' },
+    }
+  },
+}
+
+export default config;

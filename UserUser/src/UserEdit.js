@@ -80,7 +80,7 @@ class UserEdit extends NscPageRequest {
                         realname: data.realname,
                         orgId: data.orgId,
                         position: data.position,
-                        birthdate: data.birthdate == null ? null : moment(response.data.birthdate, 'YYYY-MM-DD'),
+                        birthdate: data.birthdate == null ? null : moment(data.birthdate, 'YYYY-MM-DD'),
                         sex: data.sex,
                         officeTel: data.officeTel,
                         mobile: data.mobile,

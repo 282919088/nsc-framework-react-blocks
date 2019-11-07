@@ -19,12 +19,12 @@ class MenuEdit extends NscPageRequest {
             ...this.getParams(),
             ...fieldsValue
         }
+        if (!data.parentId) {
+            data.parentId = -1;
+        }
         if (data.parentId == data.id) {
             message.warn("上级目录不能为自己！");
             return;
-        }
-        if (!data.parentId) {
-            data.parentId = -1;
         }
         const option = {
             method: type == 'add' ? 'POST' : 'PATCH',

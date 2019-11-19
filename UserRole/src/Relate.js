@@ -121,8 +121,8 @@ export default class roleRelate extends Component {
                     ref="roleSearch"
                     addonAfter={
                       <div>
-                        <Icon type="search" className={styles.icon} onClick={e => this.handleRoleSearch(e)} />
-                        <Divider type="vertical" />
+                        {/* <Icon type="search" className={styles.icon} onClick={e => this.handleRoleSearch(e)} />
+                        <Divider type="vertical" /> */}
                         <NscIcon type="sync" ref="roleLoad" className={styles.icon} onClick={() => {
                           const _this = this,
                             treeRefreshIcon = this.refs.roleLoad;
@@ -176,8 +176,8 @@ export default class roleRelate extends Component {
                     ref="relatedSearch"
                     addonAfter={
                       <div>
-                        <Icon type="search" className={styles.icon} onClick={e => this.handleRelatedSearch(e)} />
-                        <Divider type="vertical" />
+                        {/* <Icon type="search" className={styles.icon} onClick={e => this.handleRelatedSearch(e)} /> */}
+                        {/* <Divider type="vertical" /> */}
                         <NscIcon type="sync" ref="relatedLoad" className={styles.icon} onClick={() => {
                           const treeRefreshIcon = this.refs.relatedLoad;
                           treeRefreshIcon.setLoading(true);
@@ -222,8 +222,8 @@ export default class roleRelate extends Component {
                     ref="unrelatedSearch"
                     addonAfter={
                       <div>
-                        <Icon type="search" className={styles.icon} onClick={e => this.handleUnrelatedSearch(e)} />
-                        <Divider type="vertical" />
+                        {/* <Icon type="search" className={styles.icon} onClick={e => this.handleUnrelatedSearch(e)} />
+                        <Divider type="vertical" /> */}
                         <NscIcon type="sync" ref="unrelatedLoad" className={styles.icon} onClick={() => {
                           const treeRefreshIcon = this.refs.unrelatedLoad;
                           treeRefreshIcon.setLoading(true);

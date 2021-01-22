@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^4.5.14",
-    "nsc-framework-react-components": "^0.0.1",
+    "nsc-framework-react-components": "^0.0.7",
     "react": ">=16.0.0"
   },
   "devDependencies": {
